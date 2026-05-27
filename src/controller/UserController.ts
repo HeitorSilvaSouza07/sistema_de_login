@@ -11,8 +11,10 @@ export class UserController{
         }
     }
 
-    static async login(){
+    static async login(req: Request, res: Response){
         try{
+
+            const { passwordUser, emailUser } = req.body;
 
         }catch(error: any){
             
