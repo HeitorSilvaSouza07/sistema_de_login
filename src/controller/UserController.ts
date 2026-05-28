@@ -44,6 +44,7 @@ export class UserController{
 
         }catch(error: any){
             return res.status(500).json({
+                error: error,
                 status: false,
                 msg: 'Erro interno'
             })

@@ -4,10 +4,11 @@ import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 export class User {
     @PrimaryGeneratedColumn({ type: 'int'})
     id!: number;
-    @Column({type: 'varchar', length: 255})
+
+    @Column({type: 'varchar', length: 200})
     emailUser!: string;
 
-    @Column({type: 'varchar', length: 255})
+    @Column({type: 'varchar', length: 500})
     passwordUser!: string;
 
 }
